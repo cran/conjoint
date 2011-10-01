@@ -1,10 +1,12 @@
-0d4c371f710aaaafa664129dc3c70f9f *DESCRIPTION
-ee7ef0db429e6bcb95d37bce2591cb8a *NAMESPACE
+6367caf5ed00da065fb798ef7fef84b9 *DESCRIPTION
+b64b3c97799f5d5a401a85e9d41424b4 *NAMESPACE
 bbfaa4134dffe946e7f898c5bf81747d *R/Conjoint.R
 402ea868d2e5b16ae9bcbd4ded0eff80 *R/ENGINE.R
 735d8e672a860d149847bed8104615eb *R/ShowAllSimulations.R
 92cd61d96ad97666e89d01d39eda65b4 *R/ShowAllUtilities.R
 4c57e38f7672e586163ddcc48024276a *R/caBTL.R
+50b214bee1bba7050c34d7b18f75bbd6 *R/caEncodedDesign.R
+d103f1f5e8a4ebbf4595e2b62c146832 *R/caFactorialDesign.R
 f8de0eab1687003a361cc8fc3c6e2112 *R/caImportance.R
 3a32720ebe26b70d851e33c9cfe946be *R/caLogit.R
 98db99db67eaf723cedb6e7a001cbdd2 *R/caMaxUtility.R
@@ -25,6 +27,8 @@ b6c6459676a21a4ab50ddda4fac53123 *man/caBTL.Rd
 c703894c9c689b66e3fed4ac91ee9f72 *man/caDataCzekolada.Rd
 843c4cc37d4b9e651cd247e44570c15b *man/caDataHerbata.Rd
 5664b875c676c4dad6d5a307b1a3068a *man/caDataTea.Rd
+8d4f381da75b3ad83e76f5a7a218a6f2 *man/caEncodedDesign.Rd
+90965ae1d25d923edcc14db343c600b4 *man/caFactorialDesign.Rd
 f8a0c55bfec3cfb13f86d501f4c4e1c4 *man/caImportance.Rd
 20c4f0f655dc8d0ae93d7346892cf7fa *man/caLogit.Rd
 aa6932be296ac0048db41a0b0eca5350 *man/caMaxUtility.Rd
