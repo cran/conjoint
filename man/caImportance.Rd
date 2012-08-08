@@ -32,7 +32,7 @@ Green P.E., Srinivasan V. (1978), \emph{Conjoint Analysis in Consumer Research: 
 #Example 1
 library(conjoint)
 data(herbata)
-imp=caImportance(hpref,hprof)
+imp<-caImportance(hpref,hprof)
 print("Importance summary: ", quote=FALSE)
 print(imp)
 print(paste("Sum: ", sum(imp)), quote=FALSE)
@@ -40,7 +40,7 @@ print(paste("Sum: ", sum(imp)), quote=FALSE)
 #Example 1
 library(conjoint)
 data(czekolada)
-imp=caImportance(cpref,cprof)
+imp<-caImportance(cpref,cprof)
 print("Importance summary: ", quote=FALSE)
 print(imp)
 print(paste("Sum: ", sum(imp)), quote=FALSE)

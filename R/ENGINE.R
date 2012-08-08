@@ -185,6 +185,7 @@ utilities <- function(u, Lj)
 totalsimutility <- function(sym, y, x)
 {
  	options(contrasts=c("contr.sum","contr.poly"))
+	outdec<-options(OutDec="."); on.exit(options(outdec))
 	options(OutDec=",")
 	y<-m2v(y)
 	n<-nrow(x)
@@ -194,7 +195,7 @@ totalsimutility <- function(sym, y, x)
 	Lj<-vector("numeric", m)
 	for(j in 1:m) {Lj[j]<-nlevels(factor(x[[xnms[j]]]))}
 	p<-sum(Lj)-m+1
-    ynms<-names(y)
+    	ynms<-names(y)
 	xtmp<-paste("factor(x$",xnms,sep="", paste(")"))
 	xfrm<-paste(xtmp,collapse="+")
 	usl<-partutils(xfrm,y,x,n,p,S)
@@ -252,7 +253,7 @@ partutilities<-function(xfrm,y,x,n,p,S,z)
       u <- as.matrix(camodel$coeff)
       for(l in 1:p) {usl[(s+1),l] <- u[l]}
       u <- as.matrix(camodel$coeff)
-	  intercept[s+1]<-u[1]
+	intercept[s+1]<-u[1]
       for(j in 1:m) {Lj[j] <- nlevels(factor(x[[xnms[j]]]))}
       ulb <- utilities(u, Lj)
       UsiAll[s+1,]<-ulb
@@ -289,6 +290,7 @@ utlsplot<-function(ul,Lj,z,m,xnms)
 profsimcode<-function(x)
 {
 	options(contrasts=c("contr.sum","contr.poly"))
+	outdec<-options(OutDec="."); on.exit(options(outdec))
 	options(OutDec=",")
 	xnms<-names(x)
 	xtmp<-paste("factor(x$", xnms, sep="", paste(")"))

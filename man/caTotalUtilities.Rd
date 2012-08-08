@@ -32,13 +32,13 @@ Green P.E., Srinivasan V. (1978), \emph{Conjoint Analysis in Consumer Research: 
 #Example 1
 library(conjoint)
 data(herbata)
-Usi=caTotalUtilities(hpref,hprof)
+Usi<-caTotalUtilities(hpref,hprof)
 print(Usi)
 
 #Example 1
 library(conjoint)
 data(czekolada)
-Usi=caTotalUtilities(hpref,hprof)
+Usi<-caTotalUtilities(hpref,hprof)
 print(Usi)
 }
 

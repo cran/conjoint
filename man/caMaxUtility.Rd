@@ -32,14 +32,14 @@ Green P.E., Srinivasan V. (1978), \emph{Conjoint Analysis in Consumer Research: 
 #Example 1
 library(conjoint)
 data(herbata)
-simutil=caMaxUtility(hsimp,hpref,hprof)
+simutil<-caMaxUtility(hsimp,hpref,hprof)
 print("Percentage participation of profiles:", quote=FALSE)
 print(simutil)
 
 #Example 2
 library(conjoint)
 data(czekolada)
-simutil=caMaxUtility(csimp,cpref,cprof)
+simutil<-caMaxUtility(csimp,cpref,cprof)
 print("Percentage participation of profiles:", quote=FALSE)
 print(simutil)
 }

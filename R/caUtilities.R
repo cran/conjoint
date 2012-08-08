@@ -1,6 +1,7 @@
 caUtilities<-function(y,x,z)
 {
  	options(contrasts=c("contr.sum","contr.poly"))
+	outdec<-options(OutDec="."); on.exit(options(outdec))
 	options(OutDec=",")
 	y<-m2v(y)
 	m<-length(x)
@@ -16,6 +17,7 @@ caUtilities<-function(y,x,z)
 	for(j in 1:m) {Lj[j]<-nlevels(factor(x[[xnms[j]]]))}
 	x<-as.data.frame(matexpand(m,n,S,x))
 	camodel<-lm(frml)
+	print(summary.lm(camodel))
 	u<-as.matrix(camodel$coeff)  
 	intercept<-u[1]
 	ul<-utilities(u,Lj)

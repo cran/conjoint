@@ -32,78 +32,78 @@ Green P.E., Srinivasan V. (1978), \emph{Conjoint Analysis in Consumer Research: 
 \examples{
 #Example 1
 library(conjoint)
-experiment = expand.grid(
-price = c("low", "medium", "high"),
-variety = c("black", "green", "red"),
-kind = c("bags", "granulated", "leafy"),
-aroma = c("yes", "no"))
-design<-caFactorialDesign(data=experiment, type="full")
+experiment<-expand.grid(
+	price<-c("low","medium","high"),
+	variety<-c("black","green","red"),
+	kind<-c("bags","granulated","leafy"),
+	aroma<-c("yes","no"))
+design<-caFactorialDesign(data=experiment,type="full")
 print(design)
 print(cor(caEncodedDesign(design)))
 
 #Example 2
 library(conjoint)
-experiment = expand.grid(
-price = c("low", "medium", "high"),
-variety = c("black", "green", "red"),
-kind = c("bags", "granulated", "leafy"),
-aroma = c("yes", "no"))
+experiment<-expand.grid(
+	price<-c("low","medium","high"),
+	variety<-c("black","green","red"),
+	kind<-c("bags","granulated","leafy"),
+	aroma<-c("yes","no"))
 design<-caFactorialDesign(data=experiment)
 print(design)
 print(cor(caEncodedDesign(design)))
 
 #Example 3
 library(conjoint)
-experiment = expand.grid(
-price = c("low", "medium", "high"),
-variety = c("black", "green", "red"),
-kind = c("bags", "granulated", "leafy"),
-aroma = c("yes", "no"))
-design<-caFactorialDesign(data=experiment, type="fractional", cards=16)
+experiment<-expand.grid(
+	price<-c("low","medium","high"),
+	variety<-c("black","green","red"),
+	kind<-c("bags","granulated","leafy"),
+	aroma<-c("yes","no"))
+design<-caFactorialDesign(data=experiment,type="fractional",cards=16)
 print(design)
 print(cor(caEncodedDesign(design)))
 
 #Example 4
 library(conjoint)
-experiment = expand.grid(
-price = c("low", "medium", "high"),
-variety = c("black", "green", "red"),
-kind = c("bags", "granulated", "leafy"),
-aroma = c("yes", "no"))
-design<-caFactorialDesign(data=experiment, type="fractional")
+experiment<-expand.grid(
+	price<-c("low","medium","high"),
+	variety<-c("black","green","red"),
+	kind<-c("bags","granulated","leafy"),
+	aroma<-c("yes","no"))
+design<-caFactorialDesign(data=experiment,type="fractional")
 print(design)
 print(cor(caEncodedDesign(design)))
 
 #Example 5
 library(conjoint)
-experiment = expand.grid(
-price = c("low", "medium", "high"),
-variety = c("black", "green", "red"),
-kind = c("bags", "granulated", "leafy"),
-aroma = c("yes", "no"))
-design<-caFactorialDesign(data=experiment, type="ca")
+experiment<-expand.grid(
+	price<-c("low","medium","high"),
+	variety<-c("black","green","red"),
+	kind<-c("bags","granulated","leafy"),
+	aroma<-c("yes","no"))
+design<-caFactorialDesign(data=experiment,type="ca")
 print(design)
 print(cor(caEncodedDesign(design)))
 
 #Example 6
 library(conjoint)
-experiment = expand.grid(
-price = c("low", "medium", "high"),
-variety = c("black", "green", "red"),
-kind = c("bags", "granulated", "leafy"),
-aroma = c("yes", "no"))
-design<-caFactorialDesign(data=experiment, type="aca")
+experiment<-expand.grid(
+	price<-c("low","medium","high"),
+	variety<-c("black","green","red"),
+	kind<-c("bags","granulated","leafy"),
+	aroma<-c("yes","no"))
+design<-caFactorialDesign(data=experiment,type="aca")
 print(design)
 print(cor(caEncodedDesign(design)))
 
 #Example 7
 library(conjoint)
-experiment = expand.grid(
-price = c("low", "medium", "high"),
-variety = c("black", "green", "red"),
-kind = c("bags", "granulated", "leafy"),
-aroma = c("yes", "no"))
-design<-caFactorialDesign(data=experiment, type="orthogonal")
+experiment<-expand.grid(
+	price<-c("low","medium","high"),
+	variety<-c("black","green","red"),
+	kind<-c("bags","granulated","leafy"),
+	aroma<-c("yes","no"))
+design<-caFactorialDesign(data=experiment,type="orthogonal")
 print(design)
 print(cor(caEncodedDesign(design)))
 }

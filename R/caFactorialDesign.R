@@ -1,6 +1,5 @@
 caFactorialDesign<-function(data, type="null", cards=NA)
 {
-        library(AlgDesign)
         set.seed(123)
         num<-data.frame(data.matrix(data))
         vars.number<-length(num)

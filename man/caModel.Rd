@@ -34,15 +34,15 @@ library(conjoint)
 data(herbata)
 x<-as.data.frame(hprof)
 y1<-as.data.frame(hpref[1:nrow(x),1])
-model=caModel(y1, x)
+model<-caModel(y1, x)
 print(model)
 
 #Example 2
 library(conjoint)
-data(herbata)
-x<-as.data.frame(hprof)
-y1<-as.data.frame(hpref[1:nrow(x),1])
-model=caModel(y1, x)
+data(czekolada)
+x<-as.data.frame(cprof)
+y1<-as.data.frame(cpref[1:nrow(x),1])
+model<-caModel(y1, x)
 print(model)
 }
 

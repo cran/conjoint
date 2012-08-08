@@ -1,6 +1,7 @@
 caTotalUtilities<-function(y,x)
 {
  	options(contrasts=c("contr.sum","contr.poly"))
+	outdec<-options(OutDec="."); on.exit(options(outdec))
 	options(OutDec=",")
 	y<-m2v(y)
 	m<-length(x)

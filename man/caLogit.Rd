@@ -32,14 +32,14 @@ Green P.E., Srinivasan V. (1978), \emph{Conjoint Analysis in Consumer Research: 
 #Example 1
 library(conjoint)
 data(herbata)
-simutil=caLogit(hsimp,hpref,hprof)
+simutil<-caLogit(hsimp,hpref,hprof)
 print("Percentage participation of profiles:", quote=FALSE)
 print(simutil)
 
 #Example 2
 library(conjoint)
 data(czekolada)
-simutil=caLogit(csimp,cpref,cprof)
+simutil<-caLogit(csimp,cpref,cprof)
 print("Percentage participation of profiles:", quote=FALSE)
 print(simutil)
 }

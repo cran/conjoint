@@ -1,6 +1,7 @@
 ShowAllSimulations<-function(sym,y,x)
 {
  	options(contrasts=c("contr.sum","contr.poly"))
+	outdec<-options(OutDec="."); on.exit(options(outdec))
 	options(OutDec=",")
 	MaxUtility<-caMaxUtility(sym,y,x)
 	BTLmodel<-caBTL(sym,y,x)

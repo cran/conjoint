@@ -34,13 +34,13 @@ Green P.E., Srinivasan V. (1978), \emph{Conjoint Analysis in Consumer Research: 
 #Example 1
 library(conjoint)
 data(herbata)
-uslall=caPartUtilities(hpref,hprof,hlevn)
+uslall<-caPartUtilities(hpref,hprof,hlevn)
 print(uslall)
 
 #Example 2
 library(conjoint)
 data(czekolada)
-uslall=caPartUtilities(cpref,cprof,clevn)
+uslall<-caPartUtilities(cpref,cprof,clevn)
 print(uslall)
 }
 

@@ -1,6 +1,7 @@
 ShowAllUtilities<-function(y,x,z)
 {
 	options(contrasts=c("contr.sum","contr.poly"))
+	outdec<-options(OutDec="."); on.exit(options(outdec))
 	options(OutDec=",")
 	utls<-round(caUtilities(y,x,z),4)
 	levnms<-c("intercept",as.matrix(z))

@@ -33,13 +33,13 @@ Green P.E., Srinivasan V. (1978), \emph{Conjoint Analysis in Consumer Research: 
 #Example 1
 library(conjoint)
 data(herbata)
-segments=caSegmentation(hpref,hprof)
+segments<-caSegmentation(hpref,hprof)
 print(segments)
 
 #Example 2
 library(conjoint)
 data(herbata)
-segments=caSegmentation(hpref,hprof, 4)
+segments<-caSegmentation(hpref,hprof, 4)
 print(segments)}
 
 \keyword{multivariate}

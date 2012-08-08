@@ -1,6 +1,7 @@
 caImportance<-function(y,x)
 {
 	options(contrasts=c("contr.sum", "contr.poly"))
+	outdec<-options(OutDec="."); on.exit(options(outdec))
 	options(OutDec=",")
 	y<-m2v(y)
 	m<-length(x)
@@ -14,13 +15,13 @@ caImportance<-function(y,x)
 	xfrm<-paste(xtmp,collapse="+")
 	usl<-partutils(xfrm,y,x,n,p,S)
 	imps<-matrix(0,S,m)
-    for(s in 1:S)
-    {
-      u<-usl[s,]
-      ul<-utilities(u,Lj)
-      imp<-importance(ul,Lj)*100
-      imps[s,]<-imp
-    }
+   	for(s in 1:S)
+	{
+	      u<-usl[s,]
+	      ul<-utilities(u,Lj)
+	      imp<-importance(ul,Lj)*100
+	      imps[s,]<-imp
+	}
 	impS<-round(apply(imps,2,"mean"),2)
 	return(impS)
 }

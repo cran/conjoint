@@ -1,0 +1,21 @@
+citHeader("To cite the conjoint package in a publication please use:")
+
+
+
+citEntry(entry="Article",
+        
+title="Conjoint analysis method and its implementation in conjoint R package",
+        
+author=personList(as.person("A. Bak"), as.person("T. Bartlomowicz")),
+      	
+year="2012",
+        
+journal="In: Pociecha J., Decker R. (Eds.), Data analysis methods and its applications, C.H. Beck",
+        
+pages="239-248",
+	
+url="http://keii.ue.wroc.pl/pracownicy/tb/Bak_A_and_Bartlomowicz_T_Conjoint_analysis_method_and_its_implementation_in_conjoint_R_package.pdf",
+        
+textVersion="Bak A. and Bartlomowicz T. (2012), 
+Conjoint analysis method and its implementation in conjoint R package, In: Pociecha J., Decker R. (Eds.), Data analysis methods and its applications, C.H. Beck, p. 239-248"
+)
