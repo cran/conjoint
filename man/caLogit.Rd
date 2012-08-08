@@ -1,8 +1,7 @@
 \name{caLogit}
 \alias{caLogit}
 \title{Function caLogit estimates participation (market share) of simulation profiles}
-\description{Function caLogit estimates participation of simulation profiles using logit model. Function returns vector of percentage participations. The sum of participation should be 100\%.
-}
+\description{Function caLogit estimates participation of simulation profiles using logit model. Function returns vector of percentage participations. The sum of participation should be 100\%.}
 \usage{
 caLogit(sym, y, x)
 }

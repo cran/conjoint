@@ -1,8 +1,7 @@
 \name{caMaxUtility}
 \alias{caMaxUtility}
 \title{Function caMaxUtility estimates participation (market share) of simulation profiles}
-\description{Function caMaxUtility estimates participation of simulation profiles using model of maximum utility ("first position"). Function returns vector of percentage participations. The sum of participation should be 100\%.
-}
+\description{Function caMaxUtility estimates participation of simulation profiles using model of maximum utility ("first position"). Function returns vector of percentage participations. The sum of participation should be 100\%.}
 \usage{
 caMaxUtility(sym, y, x)
 }
