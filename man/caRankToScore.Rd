@@ -1,14 +1,15 @@
-\name{caEncodedDesign}
-\alias{caEncodedDesign}
-\title{Function caEncodedDesign encodes full or fractional factorial design}
-\description{Function caEncodedDesign encodes full or fractional factorial design. Function converts design of experiment to matrix of profiles.
+\name{caRankToScore}
+\alias{caRankToScore}
+\title{Function caRankToScore transforms ranking data into rating data design}
+\description{Function caRankToScore transforms ranking data into rating data design necessary for conjoint model.
 }
 \usage{
-caEncodedDesign(design)
+caRankToScore(y.rank)
 }
 
 \arguments{
-\item{design}{design of experiment returned by caFactorialDesign function}
+\item{y.rank}{matrix of preferences in ranking format}
+
 }
 
 \author{
@@ -32,22 +33,14 @@ Green P.E., Srinivasan V. (1978), \emph{Conjoint Analysis in Consumer Research: 
 \examples{
 #Example 1
 library(conjoint)
-experiment<-expand.grid(
-price=c("low","medium","high"),
-variety=c("black","green","red"),
-kind=c("bags","granulated","leafy"),
-aroma=c("yes","no"))
-design=caFactorialDesign(data=experiment,type="orthogonal")
-print(design)
-code=caEncodedDesign(design)
-print(code)
-print(cor(code))
-write.csv2(design,file="orthogonal_factorial_design.csv",row.names=FALSE)
-write.csv2(code,file="encoded_orthogonal_factorial_design.csv",row.names=FALSE)
-}
-
-\seealso{
-\code{\link{caFactorialDesign}} and \code{\link{caRecreatedDesign}}
+data(ice)
+print(ilevn)
+print(iprof)
+print(ipref)
+preferences<-caRankToScore(ipref)
+print(preferences)
+Conjoint(preferences, iprof, ilevn)
 }
 
 \keyword{multivariate}
+

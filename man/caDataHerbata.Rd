@@ -1,13 +1,12 @@
 \name{herbata}
 \docType{data}
-\alias{herbata}
 \alias{hpref}
 \alias{hprefm}
 \alias{hprof}
 \alias{hlevn}
 \alias{hsimp}
-\title{Sample data for conjoint analysis.}
-\description{Data collected in the survey conducted by M. Baran in 2007.}
+\title{Sample data for conjoint analysis}
+\description{Sample data in score mode. Rating (score) data does not need any conversion. Data collected in the survey conducted by M. Baran in 2007.}
 \usage{
 data(herbata)
 hpref
@@ -25,13 +24,15 @@ hsimp
     \item{\code{hsimp}}{Matrix of simulation profiles.}
     }
 }
+
 \examples{
 library(conjoint)
 data(herbata)
+print(hprefm)
 print(hprof)
 print(hlevn)
-print(hprefm)
 print(hsimp)}
+
 \keyword{datasets}
 
 

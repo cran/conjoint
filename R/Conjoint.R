@@ -1,5 +1,6 @@
-Conjoint<-function(y,x,z)
+Conjoint<-function(y,x,z,y.type="score")
 {
+	if (y.type=="rank") {y<-caRankToScore(y)}
 	options(contrasts=c("contr.sum","contr.poly"))
 	outdec<-options(OutDec="."); on.exit(options(outdec))
 	options(OutDec=",")	

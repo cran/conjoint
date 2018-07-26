@@ -1,4 +1,20 @@
 
+cvec2csvec<-function(attrNames,levNumbers,levelsNames)
+{
+   nattr<-length(attrNames)
+   levNam<-list(nattr)
+   p<-1
+   k<-levNumbers[1]
+   for(j in 1:nattr)
+   {  
+      levNam[j]<-list(levelsNames[p:k])
+      p<-p+levNumbers[j]
+      k<-k+levNumbers[j+1]
+   }
+   return(levNam)
+}
+
+
 m2v<-function(y,w=TRUE)
 {
 	y<-as.matrix(y)

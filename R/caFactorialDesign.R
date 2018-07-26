@@ -1,6 +1,7 @@
-caFactorialDesign<-function(data, type="null", cards=NA)
+caFactorialDesign<-function(data, type="null", cards=NA, seed=123)
 {
-        set.seed(123)
+        options(contrasts=c("contr.treatment","contr.poly"))
+        set.seed(seed)
         num<-data.frame(data.matrix(data))
         vars.number<-length(num)
         levels.number<-0

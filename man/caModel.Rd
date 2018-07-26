@@ -1,7 +1,8 @@
 \name{caModel}
 \alias{caModel}
 \title{Function caModel estimates parameters of conjoint analysis model}
-\description{Function caModel estimates parameters of conjoint analysis model. Function caModel returns vector of estimated parameters of traditional conjoint analysis model.}
+\description{Function caModel estimates parameters of conjoint analysis model for one respondent. Function caModel returns vector of estimated parameters of traditional conjoint analysis model.
+}
 \usage{
 caModel(y, x)
 }
@@ -20,30 +21,37 @@ Department of Econometrics and Computer Science, Wroclaw University of Economics
 }
 
 \references{
-Bak A. (2009), \emph{Analiza Conjoint [Conjoint Analysis]}, [In:] Walesiak M., Gatnar E. (Eds.), \emph{Statystyczna analiza danych z wykorzystaniem programu R [Statistical Data Analysis using R]}, Wydawnictwo Naukowe PWN, Warszawa.
+Bak A., Bartlomowicz T. (2012), \emph{Conjoint analysis method and its implementation in conjoint R package}, [In:] Pociecha J., Decker R. (Eds.), \emph{Data analysis methods and its applications}, C.H.Beck, Warszawa, p.239-248.
 
-Green P.E., Srinivasan V. (1978), \emph{Conjoint Analysis in Consumer Research: Issues and Outlook}, "Journal of Consumer Research", September, 5, 103-123.
+Bak A. (2009), \emph{Analiza Conjoint [Conjoint Analysis]}, [In:] Walesiak M., Gatnar E. (Eds.), \emph{Statystyczna analiza danych z wykorzystaniem programu R [Statistical Data Analysis using R]}, Wydawnictwo Naukowe PWN, Warszawa, p. 283-317.
+
+Green P.E., Srinivasan V. (1978), \emph{Conjoint Analysis in Consumer Research: Issues and Outlook}, "Journal of Consumer Research", September, 5, p. 103-123.
 
 \emph{SPSS 6.1 Categories} (1994), SPSS Inc., Chicago.
 }
 
-
 \examples{
 #Example 1
 library(conjoint)
-data(herbata)
-x<-as.data.frame(hprof)
-y1<-as.data.frame(hpref[1:nrow(x),1])
-model<-caModel(y1, x)
+data(tea)
+model=caModel(tprefm[1,], tprof)
 print(model)
 
 #Example 2
 library(conjoint)
-data(czekolada)
-x<-as.data.frame(cprof)
-y1<-as.data.frame(cpref[1:nrow(x),1])
-model<-caModel(y1, x)
+data(chocolate)
+model=caModel(cprefm[1,], cprof)
 print(model)
+
+#Example 3
+library(conjoint)
+data(journey)
+model=caModel(jpref[306,], jprof)
+print(model)
+}
+
+\seealso{
+\code{\link{Conjoint}}
 }
 
 \keyword{multivariate}

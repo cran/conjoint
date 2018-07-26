@@ -1,35 +1,36 @@
 \name{czekolada}
 \docType{data}
-\alias{czekolada}
-\alias{cpref}
-\alias{cprefm}
-\alias{cprof}
-\alias{clevn}
-\alias{csimp}
-\title{Sample data for conjoint analysis.}
-\description{Data collected in the survey conducted by W. Nowak in 2000.}
+\alias{czpref}
+\alias{czprefm}
+\alias{czprof}
+\alias{czlevn}
+\alias{czsimp}
+\title{Sample data for conjoint analysis}
+\description{Sample data in score mode. Rating (score) data does not need any conversion. Data collected in the survey conducted by W. Nowak in 2000.}
 \usage{
 data(czekolada)
-cpref
-cprefm
-cprof
-clevn
-csimp
+czpref
+czprefm
+czprof
+czlevn
+czsimp
 }
 \format{
     \describe{
-    \item{\code{cpref}}{Vector of preferences (length 1392).}
-    \item{\code{cprefm}}{Matrix of preferences (87 respondents and 16 profiles).}
-    \item{\code{cprof}}{Matrix of profiles (5 attributes and 16 profiles).}
-    \item{\code{clevn}}{Character vector of names for the attributes' levels.}
-    \item{\code{csimp}}{Matrix of simulation profiles.}
+    \item{\code{czpref}}{Vector of preferences (length 1392).}
+    \item{\code{czprefm}}{Matrix of preferences (87 respondents and 16 profiles).}
+    \item{\code{czprof}}{Matrix of profiles (5 attributes and 16 profiles).}
+    \item{\code{czlevn}}{Character vector of names for the attributes' levels.}
+    \item{\code{czsimp}}{Matrix of simulation profiles.}
     }
 }
+
 \examples{
 library(conjoint)
 data(czekolada)
-print(cprof)
-print(clevn)
-print(cprefm)
-print(csimp)}
+print(czprefm)
+print(czprof)
+print(czlevn)
+print(czsimp)}
+
 \keyword{datasets}

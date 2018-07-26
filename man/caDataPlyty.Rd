@@ -1,11 +1,10 @@
 \name{plyty}
 \docType{data}
-\alias{plyty}
 \alias{ppref}
 \alias{pprof}
 \alias{plevn}
-\title{Sample data for conjoint analysis.}
-\description{Artificial data.}
+\title{Sample data for conjoint analysis}
+\description{Sample artificial data in score mode. Rating (score) data does not need any conversion.}
 \usage{
 data(plyty)
 ppref

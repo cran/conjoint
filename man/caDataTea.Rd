@@ -1,13 +1,12 @@
 \name{tea}
 \docType{data}
-\alias{tea}
 \alias{tpref}
 \alias{tprefm}
 \alias{tprof}
 \alias{tlevn}
 \alias{tsimp}
-\title{Sample data for conjoint analysis.}
-\description{Data collected in the survey conducted by M. Baran in 2007.}
+\title{Sample data for conjoint analysis}
+\description{Sample data in score mode. Rating (score) data does not need any conversion. Data collected in the survey conducted by M. Baran in 2007.}
 \usage{
 data(tea)
 tpref
@@ -25,12 +24,14 @@ tsimp
     \item{\code{tsimp}}{Matrix of simulation profiles.}
     }
 }
+
 \examples{
 library(conjoint)
 data(tea)
+print(tprefm)
 print(tprof)
 print(tlevn)
-print(tprefm)
 print(tsimp)}
+
 \keyword{datasets}
 
