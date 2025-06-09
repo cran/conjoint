@@ -16,7 +16,7 @@ Andrzej Bak \email{andrzej.bak@ue.wroc.pl},
 
 Tomasz Bartlomowicz \email{tomasz.bartlomowicz@ue.wroc.pl}
 
-Department of Econometrics and Computer Science, Wroclaw University of Economics, Poland \url{http://keii.ue.wroc.pl/conjoint}
+Department of Econometrics and Computer Science, Wroclaw University of Economics, Poland
 }
 
 \references{
@@ -42,8 +42,6 @@ print(design)
 code=caEncodedDesign(design)
 print(code)
 print(cor(code))
-write.csv2(design,file="orthogonal_factorial_design.csv",row.names=FALSE)
-write.csv2(code,file="encoded_orthogonal_factorial_design.csv",row.names=FALSE)
 }
 
 \seealso{

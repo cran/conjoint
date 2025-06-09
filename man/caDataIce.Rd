@@ -7,9 +7,6 @@
 \description{Sample artificial data in rank mode. Ranking (rank) data needs conversion into rating (score) data.}
 \usage{
 data(ice)
-ipref
-iprof
-ilevn
 }
 \format{
     \describe{
@@ -22,8 +19,8 @@ ilevn
 \examples{
 library(conjoint)
 data(ice)
-print(iprof)
 print(ipref)
+print(iprof)
 print(ilevn)
 }
 

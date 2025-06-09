@@ -9,11 +9,6 @@
 \description{Sample data in score mode. Rating (score) data does not need any conversion. Data collected in the survey conducted by M. Baran in 2007.}
 \usage{
 data(herbata)
-hpref
-hprefm
-hprof
-hlevn
-hsimp
 }
 \format{
     \describe{

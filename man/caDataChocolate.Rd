@@ -9,11 +9,6 @@
 \description{Sample data in score mode. Rating (score) data does not need any conversion. Data collected in the survey conducted by W. Nowak in 2000.}
 \usage{
 data(chocolate)
-cpref
-cprefm
-cprof
-clevn
-csimp
 }
 \format{
     \describe{

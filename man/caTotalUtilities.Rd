@@ -17,7 +17,7 @@ Andrzej Bak \email{andrzej.bak@ue.wroc.pl},
 
 Tomasz Bartlomowicz \email{tomasz.bartlomowicz@ue.wroc.pl}
 
-Department of Econometrics and Computer Science, Wroclaw University of Economics, Poland \url{http://keii.ue.wroc.pl/conjoint}
+Department of Econometrics and Computer Science, Wroclaw University of Economics, Poland
 }
 
 \references{

@@ -7,9 +7,6 @@
 \description{Sample artificial data in rank mode. Ranking (rank) data needs conversion into rating (score) data.}
 \usage{
 data(lody)
-lpref
-lprof
-llevn
 }
 \format{
     \describe{
@@ -22,8 +19,8 @@ llevn
 \examples{
 library(conjoint)
 data(lody)
-print(lprof)
 print(lpref)
+print(lprof)
 print(llevn)
 }
 

@@ -8,10 +8,6 @@
 \description{Sample data in score mode. Rating (score) data does not need any conversion. Data collected in the survey conducted by M. Gordzicz in 2015/2016.}
 \usage{
 data(journey)
-jpref
-jprof
-jlevn
-jsimp
 }
 \format{
     \describe{

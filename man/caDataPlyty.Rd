@@ -7,9 +7,6 @@
 \description{Sample artificial data in score mode. Rating (score) data does not need any conversion.}
 \usage{
 data(plyty)
-ppref
-pprof
-plevn
 }
 \format{
     \describe{
@@ -22,8 +19,8 @@ plevn
 \examples{
 library(conjoint)
 data(plyty)
-print(pprof)
 print(ppref)
+print(pprof)
 print(plevn)
 }
 
